@@ -50,8 +50,8 @@ function constructDefaultDatas() {
             if (firstCard && secondCard) {
                 setTimeout(() => {
                     if (firstCard.dataset.name === secondCard.dataset.name) {
-                        firstCard.backgroundColor = 'green';
-                        secondCard.backgroundColor = 'green';
+                        firstCard.style.cursor = 'none';
+                        secondCard.style.cursor = 'none';
                         matchedPairs++;
                         if (matchedPairs === imgList.length / 2) {
                             alert('Congratulations you won!');
