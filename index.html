@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory game</title>
+    <link rel="stylesheet" href="styles.css" title="styles">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Righteous&family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="h-[120px] sticky top-0">
+        <nav class="flex justify-between p-10 bg-[#ff85fc]">
+            <label class="text-white font-[Righteous] text-[28px]">Memory game</label>
+            <button id="btn" onclick="constructDefaultDatas()" class="rounded-lg bg-white w-[80px] h-[40px] text-[#ff85fc] font-bold">Start</button>
+        </nav>
+    </header>
+
+    <section class="bg-gradient-to-br from-[#ffff] to-[#ffcdfe] h-[calc(100vh-120px)]">
+
+        <center id="desc" class="text-[35px] font-[Righteous] text-[#e6acff] pt-[20%] p-[40px]">
+            A simple memory card game where players flip cards to find matching pairs
+            Click start to play
+        </center>
+
+        <div id="play-ground" class="hidden flex-wrap content-baseline gap-[10px] p-10 h-full overflow-auto">
+            
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
